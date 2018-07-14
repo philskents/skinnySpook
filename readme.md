@@ -1,16 +1,16 @@
-#Skinny Spook
+# Skinny Spook
 
-##Description
+## Description
 
 A super minimal theme for the Ghost blogging platform to help make a small step towards a sustainable internet.
 
-##Instructions
+## Instructions
 
-###Installation
+### Installation
 
 Package coming soon!
 
-###Making the menu work
+### Making the menu work
 
 Due to the limitations with creating fixed static content in the Ghost theming platform there is a little manual leg work required to get the menu page up and running:
 
