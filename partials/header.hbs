@@ -1,0 +1,12 @@
+<header id="masthead">
+    <div id="masthead-title"><a href="/"><h1>{{@blog.title}}</h1></a></div>
+    <div id="masthead-menu"></div>
+    <script>
+        if (window.location.href.includes("menu")){
+            document.getElementById("masthead-menu").innerHTML = "<a href='/'><h1 id='masthead-text'>X</h1></a>"
+        }
+        else {
+            document.getElementById("masthead-menu").innerHTML = "<a href='/menu'><h1 id='masthead-text'>Menu</h1></a>"
+        }
+    </script>
+</header>

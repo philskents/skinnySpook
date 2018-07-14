@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{! Document Settings }}
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />{{! Page Meta }}
+        <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+        <title>{{meta_title}}</title>
+        {{ghost_head}}
+    </head>
+    <body>
+        <div id="page">
+            {{> header}}
+            <div id="content">
+                <main>
+                    {{{body}}}
+                </main>
+            </div>
+            <footer>
+            </footer>
+        </div>
+        {{ghost_foot}}
+    </body>
+</html>
