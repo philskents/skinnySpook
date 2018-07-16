@@ -6,3 +6,7 @@ gulp.task('cleanCSS', function() {
     .pipe(cleanCSS())
     .pipe(gulp.dest('assets/css'))
 })
+
+gulp.task('watch', function (){
+    gulp.watch('assets/css/src/*.css', ['cleanCSS']);
+})
