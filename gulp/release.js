@@ -16,13 +16,13 @@ gulp.task('bump-hotfix', function(){
 
 gulp.task('bump-minor', function(){
     return gulp.src(['./package.json'])
-        .pipe(bump({type: 'patch'}))
+        .pipe(bump({type: 'minor'}))
         .pipe(gulp.dest('./'));
 });
 
 gulp.task('bump-major', function(){
     return gulp.src(['./package.json'])
-        .pipe(bump({type: 'patch'}))
+        .pipe(bump({type: 'major'}))
         .pipe(gulp.dest('./'));
 });
 
