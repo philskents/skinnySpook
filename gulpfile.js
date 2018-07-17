@@ -16,5 +16,5 @@ gulp.task('watch', function (){
 })
 
 gulp.task('release-minor', function(){
-    runSequence('gulp-branch', 'bump-minor');
+    runSequence('gulp-branch', 'bump-minor', 'gulp-commit');
 });
