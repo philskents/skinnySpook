@@ -8,6 +8,11 @@ gulp.task ('gulp-branch', function(){
     });
 });
 
+gulp.task ('gulp-commit', function(){
+    return gulp.src('./*')
+        .pipe(git.commit('bumped version number', {args: '-a'}));
+});
+
 gulp.task('bump-hotfix', function(){
     return gulp.src(['./package.json'])
         .pipe(bump({type: 'patch'}))
