@@ -9,8 +9,8 @@ gulp.task ('gulp-branch', function(){
 });
 
 gulp.task ('gulp-commit', function(){
-    return gulp.src('./*')
-        .pipe(git.commit('bumped version number', {args: '-a'}));
+    return gulp.src('./package.json')
+        .pipe(git.commit('bumped version number'));
 });
 
 gulp.task('bump-hotfix', function(){
