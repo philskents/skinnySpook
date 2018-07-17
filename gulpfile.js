@@ -14,3 +14,7 @@ gulp.task('cleanCSS', function() {
 gulp.task('watch', function (){
     gulp.watch('assets/css/src/*.css', ['cleanCSS']);
 })
+
+gulp.task('release-minor', function(){
+    runSequence('gulp-branch', 'bump-minor');
+});

@@ -25,8 +25,3 @@ gulp.task('bump-major', function(){
         .pipe(bump({type: 'major'}))
         .pipe(gulp.dest('./'));
 });
-
-gulp.task('release-minor', gulp.series(
-    'gulp-branch',
-    'bump-minor'
-));
