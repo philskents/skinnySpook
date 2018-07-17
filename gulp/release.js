@@ -3,7 +3,7 @@ var bump = require('gulp-bump');
 var git = require('gulp-git')
 
 gulp.task ('gulp-branch', function(){
-    git.checkout('gulp', {args:'-b develop'}, function(err) {
+    git.checkout('gulp', {args:'-b'}, function(err) {
         if (err) throw err;
     });
 });
