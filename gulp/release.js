@@ -14,14 +14,19 @@ gulp.task('bump-hotfix', function(){
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('bump-hotfix', function(){
+gulp.task('bump-minor', function(){
     return gulp.src(['./package.json'])
         .pipe(bump({type: 'patch'}))
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('bump-hotfix', function(){
+gulp.task('bump-major', function(){
     return gulp.src(['./package.json'])
         .pipe(bump({type: 'patch'}))
         .pipe(gulp.dest('./'));
 });
+
+gulp.task('release-minor', gulp.series(
+    'gulp-branch',
+    'bump-minor'
+));
