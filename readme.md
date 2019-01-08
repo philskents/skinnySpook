@@ -26,3 +26,7 @@ Due to the limitations with creating fixed static content in the Ghost theming p
 2. Add the message you want users to see when they are offline
 3. In the page options, set it to a static page
 4. Publish the page
+
+#### Update manifest.json
+
+Open the manifest.json file and update the name and short_name fields.
