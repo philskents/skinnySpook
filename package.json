@@ -11,6 +11,11 @@
         "url": "https://strangeadventures.in",
         "email": "phil.skents@gmail.com"
     },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
     "config": {
         "posts_per_page": 5
     },
