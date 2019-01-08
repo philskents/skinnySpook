@@ -1,0 +1,8 @@
+{
+    "name": "Dean Hume's Blog",
+    "short_name": "Dean Hume",
+    "start_url": "/",
+    "theme_color": "#000",
+    "background_color": "#000",
+    "display": "standalone"
+}
