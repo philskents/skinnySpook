@@ -20,6 +20,26 @@ Due to the limitations with creating fixed static content in the Ghost theming p
 
 ### PWA manual cofiguration
 
+If you do not want your blog to run as a PWA you can ignore the below instructions
+
+#### Setup code injection
+
+##### Header
+
+'<link rel="manifest" href="/manifest.json">'
+
+##### Footer
+
+'''
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script>
+'''
+
 #### Configure an offline page
 
 1. In the Ghost Admin app create a new blank story called offline
